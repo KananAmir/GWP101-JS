@@ -18,3 +18,8 @@ console.log(parseFloat(num));
 console.log(Number(newNumStr));
 console.log(parseInt(newNumStr));
 console.log(parseFloat(newNumStr));
+
+// null, NaN, undefined, 0, 0n, -0, "", "", ``, false;
+
+console.log(Boolean("0"));
+console.log(Boolean(0));
