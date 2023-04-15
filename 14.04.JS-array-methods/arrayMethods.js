@@ -65,8 +65,11 @@ console.log(vegetables.find((el) => el[el.length - 1] === "n"));
 //filter
 
 // let selectedCountries = countries.filter((elem, index, arr) => elem[0] === "A");
-let selectedCountries = countries.filter(
-  (elem, index, arr) => elem[0].toLocaleLowerCase() === "a".toLocaleLowerCase()
-);
+let selectedCountries = countries
+  .filter(
+    (elem, index, arr) =>
+      elem[0].toLocaleLowerCase() === "a".toLocaleLowerCase()
+  )
+  .map((el) => el.toLocaleUpperCase().slice(0, 3));
 
 console.log(selectedCountries);

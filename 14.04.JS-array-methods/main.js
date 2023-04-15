@@ -94,3 +94,5 @@ let arrr = [1, 2, 5];
 
 arrr.splice(0, 0, "Gulnara");
 console.log(arrr);
+
+

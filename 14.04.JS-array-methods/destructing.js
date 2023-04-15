@@ -16,3 +16,4 @@ const [html, css, , react] = webTechs;
 console.log(html);
 console.log(css);
 console.log(react);
+
