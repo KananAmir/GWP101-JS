@@ -164,3 +164,11 @@ let nArr = arr2.find((el) => el.key == Math.max(...keysArr));
 console.log(nArr);
 
 // arr2 de terkibinde 1 den cox 't' herfi olan obyekt(ler)in key(ler)ini tapin.
+
+console.log(
+  arr2.filter(
+    (el) =>
+      el.name.toLocaleLowerCase().indexOf("t") !==
+      el.name.toLocaleLowerCase().lastIndexOf("t")
+  )
+);
