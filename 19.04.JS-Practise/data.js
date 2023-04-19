@@ -1,4 +1,4 @@
-export const countries_data = [
+const countries_data = [
   {
     name: "Afghanistan",
     capital: "Kabul",
@@ -2256,3 +2256,36 @@ export const countries_data = [
     area: 390757,
   },
 ];
+
+// ölkə adına görə descending sıra ilə düzün
+
+// let sortedByName = countries_data.sort((a, b) => b.name.localeCompare(a.name));
+// console.log(sortedByName);
+
+// area görə ilk 10 ölkə
+
+// let topTenArea = countries_data.sort((a, b) => b.area - a.area).slice(0, 10);
+// console.log(topTenArea);
+
+// populationa gore ilk 10 ölkə
+
+// let topTenPopulation = countries_data
+//   .sort((a, b) => b.population - a.population)
+//   .slice(0, 10);
+// console.log(topTenPopulation);
+
+//ingilis dilli ölkeleri
+
+// let englishLang = countries_data.filter((el) =>
+//   el.languages.includes("English")
+// );
+// console.log(englishLang);
+
+//birdən çox əsas dili olan ölkələr
+
+let nameArray = countries_data.filter((c) => c.languages.length > 1);
+console.log(nameArray);
+
+//bütün ölkə adlari ve qarsisinda paytaxtı
+
+//dünya əhalisinin sayı
