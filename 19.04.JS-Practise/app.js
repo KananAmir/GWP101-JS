@@ -98,9 +98,23 @@ console.log(generateOtp2()); // 2976
 let myArr = [1, 4, true, false, 0, 5, "hello", NaN, undefined];
 
 console.log(myArr.filter(Boolean)); // all truth
-console.log(myArr.filter((element) => !Boolean(element))); //all falsy
+console.log(myArr.map((element) => !Boolean(element))); //all falsy
 
 // console.log(Math.floor(Math.random() * 16));
 
 // let name = "leyla";
 // console.log(Math.floor(Math.random() * 10));
+
+function isPrime(n) {
+  let bool = false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0) {
+      bool = true;
+    }
+  }
+  bool ? console.log(`${n} i not prime`) : console.log(`${n} i prime`);
+}
+
+isPrime(53); // true
+isPrime(95); // false
+isPrime(15); // false

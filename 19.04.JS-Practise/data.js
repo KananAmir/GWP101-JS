@@ -2283,9 +2283,15 @@ const countries_data = [
 
 //birdən çox əsas dili olan ölkələr
 
-let nameArray = countries_data.filter((c) => c.languages.length > 1);
-console.log(nameArray);
+// let nameArray = countries_data.filter((c) => c.languages.length > 1);
+// console.log(nameArray);
 
 //bütün ölkə adlari ve qarsisinda paytaxtı
 
+// console.log(countries_data.map((el) => `${el.capital}, ${el.name}`));
+
 //dünya əhalisinin sayı
+
+console.log(
+  countries_data.reduce((acc, sum, i, arr) => sum + curr.population, 0)
+);
