@@ -35,6 +35,9 @@ let stopBtn = document.querySelector(".stop");
 let resetBtn = document.querySelector(".reset");
 let result = document.querySelector("#result");
 
+let incrementInput = document.querySelector("#increment-input");
+let inputBtn = document.querySelector(".input-btn");
+
 let interval;
 let counter = 0;
 startBtn.addEventListener("click", function () {
@@ -62,3 +65,10 @@ resetBtn.addEventListener("click", function () {
   clearInterval(interval);
   //   console.log(this);
 });
+
+
+inputBtn.addEventListener("click", function(){
+  let inputValue = incrementInput.value
+  counter += +inputValue;
+  result.innerText = counter;
+})
