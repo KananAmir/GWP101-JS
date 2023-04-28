@@ -237,8 +237,8 @@ const usersCopy = [...users];
 
 let tBody = document.querySelector("tbody");
 let search = document.querySelector("#search");
-let asc = document.querySelector("#asc");
-let dsc = document.querySelector("#dsc");
+// let asc = document.querySelector("#asc");
+// let dsc = document.querySelector("#dsc");
 let sort = document.querySelector("#sort");
 
 function drawTable(users) {
@@ -272,19 +272,37 @@ search.addEventListener("input", function (event) {
   //   console.log(event.target.value);
 });
 
-asc.addEventListener("click", function () {
-  let sortedUsers = users.sort((a, b) => a.id - b.id);
-  // console.log(sortedUsers);
-  tBody.innerHTML = "";
-  drawTable(sortedUsers);
-});
-dsc.addEventListener("click", function () {
-  let sortedUsers = users.sort((a, b) => b.id - a.id);
-  // console.log(sortedUsers);
-  tBody.innerHTML = "";
-  drawTable(sortedUsers);
-});
+// asc.addEventListener("click", function () {
+//   let sortedUsers = users.sort((a, b) => a.id - b.id);
+//   // console.log(sortedUsers);
+//   tBody.innerHTML = "";
+//   drawTable(sortedUsers);
+// });
+// dsc.addEventListener("click", function () {
+//   let sortedUsers = users.sort((a, b) => b.id - a.id);
+//   // console.log(sortedUsers);
+//   tBody.innerHTML = "";
+//   drawTable(sortedUsers);
+// });
+// sort.addEventListener("click", function () {
+//   tBody.innerHTML = "";
+//   drawTable(usersCopy);
+// });
+sort.innerHTML = "Ascending";
 sort.addEventListener("click", function () {
-  tBody.innerHTML = "";
-  drawTable(usersCopy);
+  let sortedUsers;
+  if (sort.innerHTML === "Ascending") {
+    sortedUsers = users.sort((a, b) => a.id - b.id);
+    tBody.innerHTML = "";
+    sort.innerHTML = "Descending";
+  } else if (sort.innerHTML === "Descending") {
+    sortedUsers = users.sort((a, b) => b.id - a.id);
+    tBody.innerHTML = "";
+    sort.innerHTML = "Default";
+  } else {
+    tBody.innerHTML = "";
+    sortedUsers = [...usersCopy];
+    sort.innerHTML = "Ascending";
+  }
+  drawTable(sortedUsers);
 });

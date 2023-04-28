@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+      header {
+        background-color: teal;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 5%;
+        transition: all 1s;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header nav ul {
+        display: flex;
+        column-gap: 20px;
+      }
+      .header nav ul li a {
+        color: white;
+      }
+      .hero {
+        height: 200vh;
+      }
+
+      .header-scroll {
+        background-color: red;
+        color: black;
+        padding: 15px 5%;
+      }
+      .header-scroll nav ul li a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="logo">GWP101</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero"></section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
