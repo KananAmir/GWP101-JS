@@ -24,7 +24,7 @@ let allRemoveBtns = document.querySelectorAll(".remove-btn");
 // console.log(allRemoveBtns);
 allRemoveBtns.forEach((item) => {
   item.addEventListener("click", () => {
-    favorites.filter((el) => el.id != item.getAttribute("id"));
+    // favorites.filter((el) => el.id != item.getAttribute("id"));
     // console.log(el.id);
     // console.log(item.getAttribute("id"));
     // favorites.filter((el) => el.id != item.id);
