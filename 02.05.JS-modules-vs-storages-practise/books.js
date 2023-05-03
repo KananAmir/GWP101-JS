@@ -1,3 +1,4 @@
+// import sum, { books as kitablar, sayHi } from "./data.js";
 import sum, { books, sayHi } from "./data.js";
 // import sum from "./data.js";
 

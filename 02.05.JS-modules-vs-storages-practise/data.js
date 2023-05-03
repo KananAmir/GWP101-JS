@@ -93,9 +93,16 @@ const books = [
 function sayHi(name) {
   console.log("Hello", name);
 }
-export default function sum(num1, num2) {
+// export default function sum(num1, num2) {
+//   let result = num1 + num2;
+//   return result;
+// }
+
+function sum(num1, num2) {
   let result = num1 + num2;
   return result;
 }
 
 export { books, sayHi };
+
+export default sum;
