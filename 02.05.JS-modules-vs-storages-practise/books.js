@@ -35,10 +35,15 @@ let allFavBtns = document.querySelectorAll(".fav-btn");
 
 allFavBtns.forEach((elem) => {
   elem.addEventListener("click", function () {
-    // console.log(elem.id);
+    let check = favorites.find((item) => item.id == elem.id);
 
-    let favBook = books.find((item) => item.id === +elem.getAttribute("id"));
-    favorites.push(favBook);
-    localStorage.setItem("favoriteBooks", JSON.stringify(favorites));
+    if (!check) {
+      this.style.backgroundColor = "orange";
+      let favBook = books.find((item) => item.id === +elem.getAttribute("id"));
+      favorites.push(favBook);
+      localStorage.setItem("favoriteBooks", JSON.stringify(favorites));
+    } else {
+      alert("added already");
+    }
   });
 });
