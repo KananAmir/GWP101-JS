@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "username": "Gulcin",
+      "email": "gulchin@code.edu.az",
+      "phone": "123456789",
+      "id": "1"
+    },
+    {
+      "username": "Fidan",
+      "email": "fidan@code.edu.az",
+      "phone": "123456789",
+      "id": "aUVq7eL"
+    },
+    {
+      "username": "Fidan",
+      "email": "fidan@code.edu.az",
+      "phone": "123456789",
+      "id": "BL7rqy9"
+    },
+    {
+      "username": "Fidan",
+      "email": "fidan@code.edu.az",
+      "phone": "123456789",
+      "id": "_Y7mIuJ"
+    }
+  ],
+  "products": [
+    {
+      "name": "ASUS",
+      "price": 1600
+    }
+  ]
+}
