@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Blog</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <h2>The Blog Website</h2>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./newblog.html">New Blog</a></li>
+      </ul>
+    </header>
+
+    <div class="main">
+      <form class="form">
+        <h3 id="form-title">Add a New Blog</h3>
+        <label for="title">Blog title: </label><br />
+        <input type="text" name="title" id="title" /><br /><br />
+        <label for="body">Blog body: </label><br />
+        <textarea name="body" id="body" cols="40" rows="3"></textarea
+        ><br /><br />
+        <label>Blog author: </label><br />
+        <select id="select">
+          <option>select author</option>
+          <option value="Lorem">Lorem</option>
+          <option value="Ipsum">Ipsum</option>
+          <option value="Dolor">Dolor</option>
+        </select>
+        <br /><br /><br />
+        <button type="submit" id="add-edit">Add Blog</button>
+      </form>
+    </div>
+
+    <script src="./newblog.js"></script>
+  </body>
+</html>

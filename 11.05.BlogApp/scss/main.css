@@ -1,0 +1,113 @@
+body .container {
+  padding: 0 20%;
+}
+body .container header {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container header ul {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body .container header ul li {
+  list-style: none;
+}
+body .container .div .card {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid rgb(234, 234, 235);
+}
+body .container .div .card button {
+  text-align: center;
+  background-color: rgb(134, 9, 9);
+  color: white;
+  font-size: 14px;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+body .container .div .card .edit {
+  background-color: orange;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+body .container .div .card .title {
+  color: rgb(4, 12, 41);
+}
+body .container .div .card .body {
+  color: rgb(134, 9, 9);
+}
+body .container .div .card .author {
+  color: rgb(87, 85, 85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(163, 13, 13);
+}
+body header ul {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body header ul li {
+  list-style: none;
+}
+body header ul li a {
+  text-decoration: none;
+  color: rgb(53, 52, 52);
+}
+body .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main form {
+  color: rgb(53, 52, 52);
+  margin-top: 50px;
+}
+body .main form h3 {
+  text-align: center;
+  color: rgb(163, 13, 13);
+}
+body .main form input {
+  width: 100%;
+  border: 1px solid rgb(199, 198, 198);
+  padding: 0;
+  outline: none;
+  padding: 5px 10px;
+}
+body .main form textarea {
+  border: 1px solid rgb(199, 198, 198);
+  padding: 5px 10px;
+}
+body .main form select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(199, 198, 198);
+  outline: none;
+}
+body .main form button {
+  text-align: center;
+  background-color: rgb(163, 13, 13);
+  color: white;
+  font-size: 11px;
+  border: 0;
+  border-radius: 10px;
+  padding: 8px 10px;
+}/*# sourceMappingURL=main.css.map */
