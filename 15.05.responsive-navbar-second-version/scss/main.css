@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  padding: 20px 0;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header h2 {
+  font-size: 32px;
+  color: white;
+}
+header .header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .header nav ul li a {
+  color: white;
+}
+header .header nav ul li button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: 0;
+  outline: 0;
+  background-color: aqua;
+  transition: 1s;
+}
+header .header nav ul li button:hover {
+  background-color: transparent;
+  color: aqua;
+  border: 1px solid aqua;
+}
+header .header #menu-bar {
+  color: white;
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 20px 5%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+  header .header nav.show {
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+  }
+  header .header nav.show ul {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .header #menu-bar {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
